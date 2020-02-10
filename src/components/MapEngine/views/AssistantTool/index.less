@@ -1,0 +1,56 @@
+:global(.map-engine-tool-content) {
+  .ant-form-item {
+    margin-bottom: 0px !important;
+  }
+}
+
+:global(.map-engine-tool) {
+  position: absolute;
+  display: none;
+  bottom: 100px;
+  top: 80%;
+  width: 120px;
+  left: 10px;
+  .container {
+    padding: 5px;
+  }
+  .helper-container {
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 2px;
+    border-radius: 3em;
+    cursor: pointer;
+    .helper {
+      position: relative;
+      background-color: rgba(255, 255, 255, 0.7);
+      border-radius: 3em;
+      height: 3em;
+      line-height: 3em;
+      padding-right: 1em;
+      .icon-container {
+        position: absolute;
+        display: inline-block;
+        width: 3em;
+        height: 3em;
+        line-height: 3em;
+        background: rgba(24, 144, 255, 0.5);
+        text-align: center;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  .helper-content {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}
+
+.geo-address-tool {
+  position: fixed;
+  display: none;
+  bottom: 100px;
+  top: 70%;
+  width: 500px;
+  height: 320px;
+  right: 2%;
+}

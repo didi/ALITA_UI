@@ -1,0 +1,30 @@
+.layout {
+  height: 100%;
+  :global(main.ant-layout-content) {
+    overflow: auto !important;
+  }
+  .sider {
+    background: "#282c34";
+    .item {
+      color: white;
+      font-size: 20px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 50px;
+      cursor: pointer;
+    }
+    .active {
+      background: red !important;
+    }
+  }
+  .dropdown {
+    :global(.ant-btn) {
+      margin: 0 8px 8px 0;
+    }
+  }
+  .header {
+    line-height: 64px;
+  }
+}

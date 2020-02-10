@@ -1,0 +1,63 @@
+.mainContainer {
+  margin-bottom: 25px;
+  .customHeaderTitle {
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.85);
+    margin-bottom: 12px;
+    line-height: 22px;
+    font-weight: 500;
+  }
+  .customAffix {
+    position: absolute;
+    background-color: white;
+    width: 90%;
+    bottom: 2px;
+  }
+  :global(.ant-collapse-content > .ant-collapse-content-box) {
+    padding: 4px 0px !important;
+  }
+  :global(.ant-form-item label) {
+    font-size: 12px !important;
+  }
+  :global(.ant-row) {
+    margin-bottom: 0px !important;
+  }
+  :global(.ant-col-24.ant-form-item-label) {
+    padding: 0px !important;
+  }
+  :global(.fui-pro-setting-drawer-handle) {
+    position: absolute;
+    top: 240px;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 4px 0 0 4px;
+    cursor: pointer;
+    pointer-events: auto;
+    background: #1890ff;
+  }
+}
+:global(.fui-pro-setting-drawer-handle) {
+  position: absolute;
+  top: 240px;
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 4px 0 0 4px;
+  cursor: pointer;
+  pointer-events: auto;
+  background: #1890ff;
+}
+:global(.ant-select-dropdown) {
+  z-index: 10001 !important;
+}
