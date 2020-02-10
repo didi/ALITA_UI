@@ -1,12 +1,83 @@
-## 背景
+# ALITA
+ALITA is a layer-based data analysis tool.
 
-ALITA（A Layered Instrument To Analyze）是由滴滴小桔车服数据部出品的一种图层展示用于数据分析的开箱即用 LBS 服务，基于大量业务需求实现沉淀抽象出通用化的“点”、“线”、“面”三种模型，和地图丰富的点、线、面要素完美的无缝融合，设计并封装前后端通用的模块化组件，实现快速搭建可视化平台的一套看得见的全面完整的行业级地图应用解决方案。
-ALITA 旨在打造一个一站式地理信息可视化分析平台，展示大量的点、线、面等不同维度的地理信息数据，能够快速将数据可视化展示并进行统计分析，制作出相关的热力图、网格图和统计分布图等，供用户进行分析和预测。目前在小桔车服选址、魔方、调度等场景已有广泛应用，以满足业务快速增长下需求暴增产品快速迭代的需要，为业务带来极大价值。
+# Overview
 
-## 特性
+ALITA（A Layered Instrument To Analyze）is a tool which is used to display data based on layer analysis, we through a lot of business requirements precipitation abstract generalization of the "point", "line", "plane" three kind of data model, perfect integrate the map of point, line and plane design elements, design and packaging the front-end and back-end general modular components, achieve rapid build maps.
+                                      
+ALITA aims to build a one-stop platform for geographic information visualization and analysis, which can display a large number of geographic information data of different dimensions such as points, lines and planes, quickly visualize the data and conduct statistical analysis, and produce relevant heat maps, grid maps and statistical distribution maps for users to analyze and make decisions. At present, it has been widely used in many offline operation scenarios of xiaoju to meet the needs of rapid iteration of products with booming demand under the rapid growth of business, bringing great business value. 
 
-- 敏捷开发、快速迭代、稳定安全、便捷易用
-- 设计样式映射、前后端组件可配置化、配置灵活
-- 可视化展示、支持海量数据时空聚合、叠加分析、多维展示
-- 工具多、实用性强、多端统一
-- 数据驱动视图，看得见的全面完整的解决方案
+# Feature
+
+• agile development, fast iteration, stable security, easy to use
+
+• components can be configured flexibly
+
+• support massive data spatiotemporal aggregation, stack analysis, multi-dimensional display
+
+• tool set, strong practicality, multi - terminal unity
+
+• data-driven view, full and complete solution
+
+# Architecture
+
+## Environment
+
+•	**Language** : Java 8+、JAVASCRIPT
+
+•	**IDE(Java)** : IDEA/Eclipse installs the Lombok plug-in、VSCode
+
+•	**Dependency management** : Maven、npm
+
+•	**Database** : MySQL5.7+
+
+## Back end
+
+•	**Base framework** : Spring Boot 2.2.0.RELEASE
+
+•	**ORM framework** : Mybatis-Plus 3.3.0
+
+•	**Log** : logback
+
+## Front end
+
+•	**Language** : React
+
+•	**Component** : antd
+
+•	**Framework** : dva
+
+•	**Scaffold** : create-react-app
+
+•	**Bundler Tool** : webpack
+
+# Development
+
+• Back end
+
+```
+git clone git@github.com:didi/ALITA.git
+cd ALITA
+sh build.sh
+sh control.sh
+```
+
+• Front end
+
+```
+git clone git@github.com:didi/ALITA-UI.git
+cd ALITA-UI
+sudo npm install -g cnpm --registry=https://registry.npm.taobao.org
+cnpm i
+npm start
+```
+
+# Contributing
+
+Any contribution is welcome. All issues and pull requests are highly appreciated! For more details, please refer to [the contribution guide](CONTRIBUTING).
+
+# License
+
+<img alt="Apache-2.0 license" src="https://lucene.apache.org/images/mantle-power.png" width="128">
+
+ALITA is licensed under the terms of the Apache license. See [LICENSE ](LICENSE)for more information.
